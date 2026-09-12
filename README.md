@@ -1,7 +1,5 @@
 ⏭ Ad Skipper
 
-Build APKPlatformAPIPermissions
-
 A tiny Android app that automatically taps the Skip button on skippableYouTube ads — so you never have to.
 
 Built for personal use. Requests zero permissions (not even Internet),stores nothing outside your device, and does exactly one job.
