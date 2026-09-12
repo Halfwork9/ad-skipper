@@ -3,6 +3,7 @@
 A tiny Android app that automatically taps the Skip button on skippableYouTube ads — so you never have to.
 
 Built for personal use. Requests zero permissions (not even Internet),stores nothing outside your device, and does exactly one job.
+
 ✨ Features
 
     Automatic skipping — detects the skip button in the YouTube app themoment it becomes active and taps it
@@ -18,6 +19,7 @@ Built for personal use. Requests zero permissions (not even Internet),stores not
     It clicks the button — via ACTION_CLICK on the node or its clickableparent, or by dispatching a synthetic tap as a last resort.
 
 Only skippable ads are affected. Non-skippable ads show no button at all,so there is nothing to press — this app leaves them alone.
+
 📲 Install
 Option A — download the APK
 
@@ -45,6 +47,7 @@ Button text for other languages	SKIP_TEXTS in SkipAdService.kt
 More apps (Netflix "Skip Intro", browsers, …)	android:packageNames in res/xml/skip_ad_service_config.xml
 Time-saved estimate per ad	EST_SECONDS_PER_AD in MainActivity.kt
 YouTube view IDs after an app update	findAndClickSkip() in SkipAdService.kt
+
 🔒 Privacy
 
     No permissions requested — verify yourself: Settings → Apps → Ad Skipper → Permissions
@@ -59,6 +62,7 @@ Toggle greyed out (Android 13+)	Settings → Apps → Ad Skipper → ⋮ → All
 Service stops working after a while	Disable battery optimization for the app
 Doesn't skip in another language	Add your word to SKIP_TEXTS and rebuild
 Stopped working after YouTube update	View IDs changed — text fallback usually survives; update the ID list
+
 📁 Project structure
 
 app/src/main/├── java/com/example/adskipper/│   ├── SkipAdService.kt        # The accessibility service doing the work│   └── MainActivity.kt          # Stats dashboard + service status└── res/    ├── layout/activity_main.xml    ├── values/  (strings, styles)    ├── xml/skip_ad_service_config.xml    └── drawable/ + mipmap-anydpi/  # UI + app icon.github/workflows/build.yml       # CI — builds the APK on every push
