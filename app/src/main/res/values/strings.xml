@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ad Skipper</string>
+    <string name="service_description">Automatically presses the Skip button when a skippable YouTube ad appears.</string>
+</resources>
