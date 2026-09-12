@@ -13,7 +13,6 @@ Built for personal use. Requests zero permissions (not even Internet),stores not
     No root required — uses Android's public AccessibilityService API
     Lightweight — ~1 MB APK, no dependencies, no ads (obviously)
 
-📸 Screenshot
 🛠 How it works
 
     An AccessibilityService listens for screen changes — but only insidethe YouTube app (see res/xml/skip_ad_service_config.xml).
@@ -73,8 +72,6 @@ This is a personal-use project and is not affiliated with Google or YouTube.Auto
 
 MIT
 
-How to apply it: open your repo on github.com → click README.md → pencil icon (✏️) → select all → paste this → replace YOUR-USERNAME → Commit changes. Done.
 
-After committing, refresh the repo page — you'll see the badges at the top, formatted tables, and the rendered layout. If the build badge shows red or "unknown," it means the username in line 3 is wrong; everything else uses relative links and works as-is.
     
      
